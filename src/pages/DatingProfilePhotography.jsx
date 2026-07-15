@@ -104,7 +104,7 @@ export default function DatingProfilePhotography() {
       <section className="relative">
         <div className="w-full h-[70vh] min-h-[420px] relative overflow-hidden">
           <img
-            src={cover}
+            src={PORTFOLIO_IMAGES.master_9873}
             alt="Confident candid portrait"
             className="w-full h-full object-cover"
             style={{ objectPosition: "50% 20%" }}

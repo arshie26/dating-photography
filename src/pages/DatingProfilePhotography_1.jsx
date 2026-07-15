@@ -11,6 +11,7 @@ import mtc2 from '../assets/mtc2.jpg'
 import mtc3 from '../assets/mtc3.jpg'
 import mtc4 from '../assets/mtc4.jpg'
 import mtc5 from '../assets/mtc5.jpg'
+import logo from '../assets/logo.png'
 
 import {
   Camera,
@@ -97,12 +98,8 @@ export default function DatingProfilePhotography() {
       {/* NAV */}
       <div className="w-full" style={{ background: "#4A3428" }}>
         <div className="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
-          <span
-            className="text-sm tracking-[0.15em] uppercase"
-            style={{ fontFamily: "'Playfair Display', serif", color: "#FAF3E8" }}
-          >
-            Arsh Agarwal <span className="opacity-60">Photography</span>
-          </span>
+          
+          <img src={logo} className="logo" />
           <a
             href="#book"
             className="text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full"

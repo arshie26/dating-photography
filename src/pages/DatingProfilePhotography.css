@@ -6,9 +6,15 @@
     font-size: 26px;
 }
 
-        
+.logo{
+    width: 25%;
+}
 
 @media (max-width: 424px){
+
+    .logo{
+        width: 50%;
+    }
 
     .hero__testimonial{
         width: 95%;
