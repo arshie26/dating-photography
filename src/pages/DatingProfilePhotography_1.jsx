@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import cover from '../assets/cover5.png'
+import cover from '../assets/cover5.jpg'
+import arsh from '../assets/arsh.jpg'
 import './DatingProfilePhotography.css'
 import david from '../assets/david1.jpg'
 import kevin1 from '../assets/kevin1.jpg'
@@ -105,7 +106,7 @@ export default function DatingProfilePhotography() {
             className="text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full"
             style={{ background: "#B5654A", color: "#FAF3E8" }}
           >
-            Book Now
+            Let's Talk Details
           </a>
         </div>
       </div>
@@ -318,7 +319,7 @@ export default function DatingProfilePhotography() {
                   className="text-base leading-relaxed"
                   style={{ fontSize: "16px" }}
                 >
-                  {quote.client}
+                  - {quote.client}
                 </p>
               </div>
             ))}
@@ -338,7 +339,7 @@ export default function DatingProfilePhotography() {
               style={{ border: "3px solid #FAF3E8" }}
             >
               <img
-                src={PORTFOLIO_IMAGES.final_3805}
+                src={arsh}
                 alt="Arsh Agarwal"
                 className="w-full h-full object-cover"
               />
@@ -410,7 +411,7 @@ export default function DatingProfilePhotography() {
 
       {/* PACKAGES / BOOKING FORM */}
       <section id="book" className="px-6 py-16">
-        <div className="max-w-2xl mx-auto">
+        <div className="book">
           <SectionLabel>Book a Session</SectionLabel>
           <h2
             className="text-2xl sm:text-3xl text-center mb-3"
@@ -418,58 +419,13 @@ export default function DatingProfilePhotography() {
           >
             Let's get you photos that actually work.
           </h2>
-          <p className="text-sm opacity-70 text-center mb-10">
-            Tell me a bit about you below and I'll follow up to confirm details, pricing, and
+          <p className="text-lg opacity-70 text-center mb-10">
+            Book your call below so we can confirm details, pricing, and
             availability.
             <br />
-            <span className="opacity-60">[Pricing and package tiers to be confirmed before this goes live]</span>
           </p>
 
-          <div
-            className="rounded-2xl p-6 sm:p-8 space-y-4"
-            style={{ background: "#FFFFFF", border: "1px solid rgba(74,52,40,0.15)" }}
-          >
-            {[
-              { label: "Full name *", type: "text" },
-              { label: "Phone number *", type: "text" },
-              { label: "Email *", type: "text" },
-              { label: "What's your Instagram handle?", type: "text" },
-            ].map((field, i) => (
-              <div key={i}>
-                <label className="text-xs font-semibold uppercase tracking-wide opacity-70">
-                  {field.label}
-                </label>
-                <input
-                  type="text"
-                  disabled
-                  className="w-full mt-1 rounded-md px-3 py-2 text-sm"
-                  style={{ border: "1px solid rgba(74,52,40,0.25)", background: "#FAF3E8" }}
-                />
-              </div>
-            ))}
-            <div>
-              <label className="text-xs font-semibold uppercase tracking-wide opacity-70">
-                What are you hoping these photos help with?
-              </label>
-              <textarea
-                disabled
-                rows={3}
-                className="w-full mt-1 rounded-md px-3 py-2 text-sm"
-                style={{ border: "1px solid rgba(74,52,40,0.25)", background: "#FAF3E8" }}
-              />
-            </div>
-            <button
-              type="button"
-              className="w-full rounded-full px-7 py-3 text-sm font-semibold mt-2"
-              style={{ background: "#B5654A", color: "#FAF3E8" }}
-            >
-              Submit &amp; Check Availability
-            </button>
-            <p className="text-xs opacity-50 text-center">
-              This form is a visual placeholder — connect it to your booking backend (e.g.
-              Dubsado, GoHighLevel, or a Zapier-fed form) before publishing.
-            </p>
-          </div>
+          <iframe src="https://tidycal.com/arshtist/60min" ></iframe>
         </div>
       </section>
 
@@ -531,17 +487,7 @@ export default function DatingProfilePhotography() {
         </div>
       </section>
 
-      {/* TESTIMONIAL SCATTER 3 */}
-      <section className="px-6 pb-16">
-        <div className="max-w-md mx-auto text-center">
-          <p className="text-sm italic" style={{ color: "#4A3428", opacity: 0.85 }}>
-            "[Add a testimonial quote here]"
-          </p>
-          <p className="text-xs mt-1" style={{ color: "#4A3428", opacity: 0.6 }}>
-            — [Client Name]
-          </p>
-        </div>
-      </section>
+      
 
       {/* FOOTER */}
       <footer className="px-6 py-8" style={{ background: "#2B211B", color: "#FAF3E8" }}>

@@ -10,6 +10,18 @@
     width: 25%;
 }
 
+.book{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe{
+    width: 90%;
+    height: 80vh;
+}
+
 @media (max-width: 424px){
 
     .logo{
