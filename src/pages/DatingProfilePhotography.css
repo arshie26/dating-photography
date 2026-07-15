@@ -1,0 +1,25 @@
+.hero__testimonial{
+    width: 60%;
+}
+
+.hero__testimonial--summary{
+    font-size: 26px;
+}
+
+        
+
+@media (max-width: 424px){
+
+    .hero__testimonial{
+        width: 95%;
+    }
+
+    .hero__testimonial--summary{
+        font-size: 20px;
+    }
+
+    .hero__testimonial--full{
+        display: none;
+    }
+
+}
